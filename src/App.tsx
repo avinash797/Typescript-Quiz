@@ -13,14 +13,9 @@ export interface IState {
 }
 
 function App() {
-  const [people, setPeople] = useState<IState["people"]>([
-    {
-      name: "Lebron James",
-      url: "https://cdn.nba.com/headshots/nba/latest/1040x760/2544.png",
-      age: 32,
-      note: "Allergic to something"
-    }
-  ]);
+  const [people, setPeople] = useState<IState["people"]>([]);
+
+  
 
   return (
     <div className="App">
